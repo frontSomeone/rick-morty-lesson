@@ -46,6 +46,7 @@ body {
 
 .character-left {
   flex: 2;
+  min-width: 120px;
 }
 
 .character-left img {
@@ -57,4 +58,5 @@ body {
 .character-right {
   flex: 3;
   padding: 10px;
+  overflow: hidden;
 }
