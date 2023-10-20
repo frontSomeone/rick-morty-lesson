@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { fetchEpisodes } from "../../api";
-import { EpisodeList } from "../presentational/EpisodeList";
 
-export const EpisodesContainer = () => {
+export const useEpisodes = () => {
   const [episodes, setEpisodes] = useState([]);
   useEffect(() => {
     fetchEpisodes().then((data) => {
@@ -10,5 +9,5 @@ export const EpisodesContainer = () => {
     });
   }, []);
 
-  return <EpisodeList episodes={episodes} />;
+  return { episodes };
 };

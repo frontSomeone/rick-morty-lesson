@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
 import { fetchCharacters } from "../../api";
-import { CharacterList } from "../presentational/CharacterList";
+import { useState, useEffect } from "react";
 
-export const CharactersContainer = ({ ids }) => {
+export const useCharacters = (ids) => {
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -15,5 +14,5 @@ export const CharactersContainer = ({ ids }) => {
     });
   }, [ids]);
 
-  return <CharacterList characters={characters} isLoading={isLoading} />;
+  return { characters, isLoading };
 };

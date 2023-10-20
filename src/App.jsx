@@ -1,10 +1,10 @@
 import { Rick } from "./components/Rick";
-import { EpisodesContainer } from "./components/containers/EpisodesContainer";
+import { EpisodeList } from "./components/presentational/EpisodeList";
 
 function App() {
   return (
     <>
-      <EpisodesContainer />
+      <EpisodeList />
     </>
   );
 }

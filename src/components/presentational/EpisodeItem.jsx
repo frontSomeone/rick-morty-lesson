@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { CharactersContainer } from "../containers/CharactersContainer";
+import { CharacterList } from "./CharacterList";
 
 export const EpisodeItem = ({ episode }) => {
   const [open, setOpen] = useState(false);
@@ -16,7 +16,7 @@ export const EpisodeItem = ({ episode }) => {
   return (
     <div className="episode" onClick={() => setOpen(true)}>
       <h3>{episode.episode + ":" + episode.name}</h3>
-      {open && <CharactersContainer ids={ids} />}
+      {open && <CharacterList ids={ids} />}
     </div>
   );
 };
