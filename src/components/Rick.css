@@ -60,3 +60,22 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+.episodesList {
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #526d82;
+  color: #dde6ed;
+  
+}
+.locationsList{
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #526d82;
+  color: #dde6ed;
+}
+.undefinedChar {
+  font-size: large;
+  color: red;
+}
